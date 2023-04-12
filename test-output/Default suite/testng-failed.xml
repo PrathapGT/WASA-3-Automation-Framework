@@ -3,11 +3,17 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="practice.Test">
+      <class name="vTiger.contactsTest.CreatecontactwithorganizationTest2">
         <methods>
-          <include name="samplecasetest"/>
+          <include name="amconfig"/>
+          <include name="bmconfig"/>
+          <include name="accong"/>
+          <include name="bsconfig"/>
+          <include name="ascong"/>
+          <include name="beconfig"/>
+          <include name="createcontactwithorganizationTest_002"/>
         </methods>
-      </class> <!-- practice.Test -->
+      </class> <!-- vTiger.contactsTest.CreatecontactwithorganizationTest2 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
-    <groups>
-      <run>
-        <exclude name="regressionsuite"/>
-      </run>
-    </groups>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="vTiger.contactsTest.CreateContactwithOrganizationTest">
+      <class name="vTiger.contactsTest.CreatecontactwithorganizationTest2">
         <methods>
-          <include name="Createcontactwithorganization_TC_01"/>
+          <include name="amconfig"/>
+          <include name="bmconfig"/>
+          <include name="accong"/>
+          <include name="bsconfig"/>
+          <include name="ascong"/>
+          <include name="beconfig"/>
+          <include name="createcontactwithorganizationTest_002"/>
         </methods>
-      </class> <!-- vTiger.contactsTest.CreateContactwithOrganizationTest -->
+      </class> <!-- vTiger.contactsTest.CreatecontactwithorganizationTest2 -->
     </classes>
-  </test> <!-- Test(failed) -->
-</suite> <!-- Failed suite [Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
