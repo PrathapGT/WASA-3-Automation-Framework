@@ -25,6 +25,13 @@ public class Homepage extends WebdriverUtility {
 	
 	private WebElement Opportunitieslink;
 	
+	
+	@FindBy(xpath="//a[@href='index.php?module=Leads&action=index']")
+	
+	private WebElement Leadslink;
+	
+	
+
 	@FindBy(xpath="//img[@src='themes/softed/images/user.PNG']")
 	
 	private WebElement administrationimg;
@@ -47,8 +54,15 @@ public class Homepage extends WebdriverUtility {
 	}
 
 	public WebElement getOpportunitieslink() {
+		
 		return Opportunitieslink;
 	}
+	
+	
+	public WebElement getLeadslink() {
+		return Leadslink;
+	}
+
 
 	public WebElement getAdministrationimg() {
 		return administrationimg;
@@ -73,6 +87,12 @@ public class Homepage extends WebdriverUtility {
 	
 	public void clickoncontactlnk() {
 		contactlink.click();
+	}
+	
+	
+	public void clickonleadslink() {
+		
+		Leadslink.click();
 	}
 	
 	public void logoutofapp(WebDriver driver) {
