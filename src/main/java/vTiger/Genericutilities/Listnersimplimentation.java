@@ -19,7 +19,6 @@ public class Listnersimplimentation implements ITestListener {
 	ExtentTest test;
 	
 	public void onTestStart(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 		
 		String METHODNAME = result.getMethod().getMethodName();
@@ -29,7 +28,6 @@ public class Listnersimplimentation implements ITestListener {
 	}
 
 	public void onTestSuccess(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 		
 		
@@ -41,7 +39,6 @@ public class Listnersimplimentation implements ITestListener {
 	}
 
 	public void onTestFailure(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 		JavaUtility jUtil=new JavaUtility();
 		
@@ -73,7 +70,6 @@ public class Listnersimplimentation implements ITestListener {
 	}
 
 	public void onTestSkipped(ITestResult result) {
-		// TODO Auto-generated method stub
 		String METHODNAME = result.getMethod().getMethodName();
 		
 		System.out.println(METHODNAME+"---skipped---");
@@ -84,11 +80,9 @@ public class Listnersimplimentation implements ITestListener {
 	}
 
 	public void onTestFailedButWithinSuccessPercentage(ITestResult result) {
-		// TODO Auto-generated method stub
 	}
 
 	public void onTestFailedWithTimeout(ITestResult result) {
-		// TODO Auto-generated method stub
 		
 		WebdriverUtility wUtil=new WebdriverUtility();
 
@@ -101,7 +95,6 @@ public class Listnersimplimentation implements ITestListener {
 		try {
 			wUtil.Takescreenshot(Baseclass.sDriver, Screenshotname);
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 		
@@ -130,7 +123,6 @@ public class Listnersimplimentation implements ITestListener {
 	}
 
 	public void onFinish(ITestContext context) {
-		// TODO Auto-generated method stub
 		
 		System.out.println("suite execution finished");
 		
